@@ -1,0 +1,409 @@
+html{
+  font-family: 'Montserrat', sans-serif ;
+}
+
+*{
+  margin: 0px;
+  padding: 0px;
+  font-size: 26px;
+  color:  #10195b  ;
+  text-decoration:none;
+}
+
+/*Section Menu*/
+.menu{
+  background-color: #ffffffe1 ;
+  display: flex;
+  border-color: rgb(0, 0, 0);
+  border-style: solid;
+  border-width: 2px;
+  margin: 10px;
+  /*justify-content: space-between;*/
+  align-items: center;
+  height: 95px;
+  padding: 5px 5%;
+}
+
+.menu .logokinal{
+  cursor: pointer;
+  margin-right: auto;
+}
+
+.menu .redes {
+  cursor: pointer;
+  margin-left: auto;
+}
+
+.menu .picture img{
+  height: 66px;
+  width: auto;
+  transition: all 0.3s;
+}
+
+.menu .picture img:hover{
+  transform: scale(1.3);
+  transition: all 0.5s;
+}
+
+.menu .nav{
+  list-style: none;
+}
+
+.menu .nav li{
+  display: inline-block;
+  padding: 0 30px;
+}
+
+.menu .nav li:hover{
+  transform: scale(1.3);
+}
+
+.menu .nav li a:hover{
+  color: #21abf6bb ;
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+}
+
+.PagActual{
+  color:  #ff4800 ;
+}
+
+/*Etiquetas de uso global*/
+h1{
+  text-align: center;
+  font-size: 60px;
+  color:#ffffff ;
+  padding: 20px 5px 25px 5px;
+  text-shadow: 0 0 8px rgb(0, 255, 255);
+}
+
+h2{
+  text-align: start;
+  font-size: 40px;
+  color:#40CFFF ;
+  text-shadow: 0 0 8px rgba(0, 0, 0, 1);
+  padding: 0px 5px 25px 5px;
+}
+
+h3{
+  color:  #f79216  ;
+  font-size: 50px;
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+  padding: 28px 5px 25px 5px;
+}
+
+p{
+  color: #ffffff;
+  text-align: justify;
+  display: block;
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.9);
+  display: block;
+}
+
+a{
+  color: #190b87;
+  text-align: justify;
+  display: block;
+  text-shadow: 0 0 8px rgba(3, 3, 3, 0.2);
+}
+
+strong{
+  color: rgb(0, 0, 0);
+  text-shadow: 0 0 8px rgba(248, 248, 248, 1);
+}
+
+/*Seccion 1 - Mis Gustos*/
+.misGustos{
+  background-color: #8fa5d674;
+  border-radius: 160px;
+  margin: 60px;
+  padding: 20px 0 50px 0; 
+  height: auto;
+}
+
+.container-image{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.gustos-img{
+  cursor: pointer;
+  width: 260px;
+  height: 240px;
+  margin-bottom: 30px;
+  object-fit: cover;
+  filter: brightness(75%);
+  border-radius: 200px;
+  animation: zoom 1.5s infinite alternate;
+}
+
+@keyframes zoom {
+  to{
+    transform: scale(1);
+  }
+  from{
+    transform: scale(1.05);
+  }
+  
+}
+
+.gustos-img:hover{
+  filter: brightness(100%);
+}
+
+/*Section 2 | Explication gustos*/
+.explicacion-gustos{
+  padding: 30px 0 60px 0;
+  height: auto;
+}
+
+.columna{
+  /* justify-content:flex-start; */
+  /* align-items: center; 28*/
+  height: auto;
+  padding: 40px 60px 60px 60px;
+}
+
+.imagenExp{ /*Imagenes Lado Izquierdo */
+  float: left;
+  margin-right: 70px;
+  cursor: pointer;
+  width: 250px;
+  height: 250px;
+  box-shadow: 5px 8px 12px black;
+  /* margin-bottom: 5px; */
+  object-fit: cover;
+  filter: brightness(100%);
+  border-radius: 200px;
+  animation: zoom 1.5s infinite alternate;
+}
+
+.imagenExp2{
+  margin: 30px; /*Imagenes Lado Derecho */
+  float: right;
+  margin-left: 70px;
+  cursor: pointer;
+  width: 250px;
+  height: 250px;
+  box-shadow: 5px 8px 12px black;
+  /* margin-bottom: 5px; */
+  object-fit: cover;
+  filter: brightness(100%);
+  border-radius: 200px;
+  animation: zoom 1.5s infinite alternate;
+}
+
+/* Pagina Biografia*/
+.biografia{
+  padding: 30px 0 60px 0;
+  height: auto;
+}
+
+.cajaBiografia{
+  /* background-color: #647ba1; */
+  height: auto;
+  padding: 30px 60px 40px 60px;
+}
+
+.imagenBio{
+  float: left;
+  margin: 26px 45px 18px 10px;
+  cursor: pointer;
+  width: 430px;
+  height: 460px;
+  object-fit:fill;
+  border-radius: 75px;
+  animation: zoom 1.5s infinite alternate;
+}
+
+/*Pagina KINAL 2023*/
+
+/*Section 1 | Transition of Images*/
+.transition{
+  width: auto;
+  height: auto;
+  overflow: hidden;
+}
+
+.transition ul{
+  display: flex;
+  animation: cambio 14s infinite alternate linear;
+  width: 400%;
+}
+
+.transition li{
+  width: 100%;
+  list-style: none;
+}
+
+.transition img{
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes cambio {
+  0%{margin-left: 0;}
+  20%{margin-left: 0;}
+
+  25%{margin-left: -100%;}
+  45%{margin-left: -100%;}
+
+  50%{margin-left: -200%;}
+  70%{margin-left: -200%;}
+
+  75%{margin-left: -300%;}
+  100%{margin-left: -300%;}
+}
+
+/*Section 2 | Trabajo Bien Hecho*/
+.TrabajoBienHecho{
+  padding: 20px 10px 45px 10px;
+  margin: 0 0px 10px 0px;
+  background-color: #24346cbc ;
+
+}
+
+.textoTrabajoBnHecho, .parrafo-trabajoBienHecho{
+  text-align: center;
+  color: #feffff;
+}
+
+.logoSesenta{
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  animation: zoom 1.2s infinite alternate;
+}
+/*Section 3 | Cursos Kinal*/
+
+#pictureKN{ /*Quitar el radius de codigo reciclado*/
+  border-radius: 30px;
+  width: 430px;
+  height: 290px;
+}
+
+.imgDonacion{
+  float: left;
+  width: 620px;
+  height: 350px;
+  margin-right: 25px;
+  
+}
+
+/* Section 4 | Partners */
+.container-partners{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.partnersImage{  /**/
+  cursor: pointer;
+  width: 220px;
+  height: 200px;
+  margin-bottom: 30px;
+  object-fit: cover;
+  filter: brightness(70%);
+  border-radius: 20px;
+  animation: zoom 1.5s infinite alternate;
+}
+
+.partnersImage:hover{
+  filter: brightness(100%);
+}
+/*Section 5 | Contacto*/
+.parrafContacto a{
+  color: #ffffff;
+  text-align: justify;
+  display: block;
+  text-shadow: 0 0 8px rgba(3, 3, 3, 0.8);
+}
+
+/*Para los links*/
+a:hover{
+  color:rgb(89, 255, 0);
+}
+
+a:active{ /*Click*/
+  color:#ff00c8
+}
+
+/* Footer */
+.footer{
+  background: #414141;
+  padding: 23px 0px 15px 0px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.container-datos{
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  margin: auto;
+  padding-bottom: 35px;
+  border-bottom: 1.5px solid #ccc;
+}
+
+.contacto{
+  text-align: center;    
+}
+
+.contacto h4{
+  color: #ffffff; /*Phone, Email, Location*/
+  text-shadow: 0 0 8px rgba(0, 0, 0, 1);
+  border-bottom: 2.3px solid #00f0f8;
+  font-size: 24px;
+  padding-bottom: 5px;
+  padding-bottom: 10px;    
+}
+
+.contacto p{
+  color: #ccc; /*Datos Personales*/
+  font-size: 20px;  
+  padding-top: 4px;
+}
+
+.programador{ /*Name*/
+  text-align: center;
+  font-size: 23px;
+  margin: 20px 0 0 0;
+  color: #baabab;
+}
+
+/* Fondo Animado */
+  .bg {
+    animation:slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg,  #24346c  50%,  #ffae00  50%);
+    bottom:0;
+    left:-50%;
+    opacity:.5;
+    position:fixed;
+    right:-50%;
+    top:0;
+    z-index:-1;
+  }
+  .bg2 {
+    animation-direction:alternate-reverse;
+    animation-duration:4s;
+  }
+  .bg3 {
+    animation-duration:5s;
+  }
+
+  @keyframes slide {
+    0% {
+      transform:translateX(-25%);
+    }
+    100% {
+      transform:translateX(25%);
+    }
+  }
+/* Fin Fondo Animado */
+
